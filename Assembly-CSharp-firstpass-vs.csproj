@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{BC6C2C13-999B-E936-FDF4-628AF5537790}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\AdColony.cs" />
+     <Compile Include="Assets\Plugins\Chartboost\CBBinding.cs" />
+     <Compile Include="Assets\Plugins\Chartboost\CBJSON.cs" />
+     <Compile Include="Assets\Plugins\Chartboost\CBManager.cs" />
+     <Compile Include="Assets\Plugins\Chartboost\demo\CBEventListener.cs" />
+     <Compile Include="Assets\Plugins\Chartboost\demo\CBUIManager.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterAchievement.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterAchievementMetadata.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterBinding.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterEventListener.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterLeaderboard.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterManager.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterPlayer.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\GameCenterScore.cs" />
+     <Compile Include="Assets\Plugins\GameCenter\testSupport\GameCenterGUIManager.cs" />
+     <Compile Include="Assets\Plugins\IRevMobListener.cs" />
+     <Compile Include="Assets\Plugins\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\RevMob.cs" />
+     <Compile Include="Assets\Plugins\RevMobBanner.cs" />
+     <Compile Include="Assets\Plugins\RevMobFullscreen.cs" />
+     <Compile Include="Assets\Plugins\RevMobLink.cs" />
+     <Compile Include="Assets\Plugins\RevMobPopup.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitBinding.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitEventListener.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitManager.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitProduct.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitTransaction.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\testSupport\StoreKitGUIManager.cs" />
+     <Compile Include="Assets\Plugins\iOS\RevMobIOS.cs" />
+     <Compile Include="Assets\Plugins\iOS\RevMobIOSBanner.cs" />
+     <Compile Include="Assets\Plugins\iOS\RevMobIOSFullscreen.cs" />
+     <Compile Include="Assets\Plugins\iOS\RevMobIosLink.cs" />
+     <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utility Scripts\CombineChildren.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\Utility Scripts\MeshCombineUtility.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

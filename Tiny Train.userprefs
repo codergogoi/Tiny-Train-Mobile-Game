@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Tickle Touch/Assets/scripts/_AdStart.cs">
+    <Files>
+      <File FileName="../Tickle Touch/Assets/scripts/_AdStart.cs" Line="8" Column="32" />
+      <File FileName="../Tickle Touch/Assets/scripts/RevMobSampleAppCSharp.cs" Line="45" Column="1" />
+      <File FileName="../Tickle Touch/Assets/Plugins/AdColony.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
